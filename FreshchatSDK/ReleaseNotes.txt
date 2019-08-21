@@ -2,26 +2,16 @@ Freshchat iOS SDK - Powered by Freshdesk
 
 Documentation   : https://support.freshchat.com
 Support Email   : support@freshchat.com
-Version         : 2.6.2
+Version         : hybrid-sdk
 
-Ver 2.6.2 
+Ver hybrid-sdk 
 __________________________
-Bug fix :
-- Fix Away Messages not being displayed due to an incompatibility in version 2.6.0 and 2.6.1
+Support for New Message Types with addition of WebView.
+Freshchat iOS SDK - Powered by Freshdesk
 
-Ver 2.6.1 
-__________________________
-Enhancements :
-- Once the article is updated, users will again see the voting option.
-- Now users will be able to message you from the downvoted article screen, even if they leave and come back again.
-
-Ver 2.6.0 
-__________________________
-Feature :
-- Hide resolved messages for conversation with defined interval.
-Bug fixes :
-- Dismiss CSAT if expired.
-- Correct alignment of text bar for keyboard with text prediction.
+Documentation   : https://support.freshchat.com
+Support Email   : support@freshchat.com
+Version         : 1.5.6
 
 Ver 2.5.2 
 __________________________
@@ -49,8 +39,7 @@ Enhancement :
 
 Ver 2.4.2 
 __________________________
-Bug Fix:
-- Trigger Restore ID event when there is change in restore ID and external ID.
+Restore ID event triggered only when there is change in restore ID and external ID.
 
 Ver 2.4.1 
 __________________________
@@ -125,7 +114,7 @@ Ver 1.5.0
 __________________________
 Support for auto expiring Customer Satisfaction Surveys
 Add support for overriding CSAT survey's question
-Action name for unread count API  changed to FRESHCHAT_UNREAD_MESSAGE_COUNT_CHANGED
+Action name for unread count API changed to FRESHCHAT_UNREAD_MESSAGE_COUNT_CHANGED
 
 Ver 1.4.6 
 __________________________
@@ -134,7 +123,7 @@ Make push prompt configurable
 
 Ver 1.4.5 
 __________________________
-Fix marketing campaign notifications not showing when app is open
+Fix marketing campaign notification
 
 Ver 1.4.4 
 __________________________
@@ -142,7 +131,7 @@ Display files sent by user from other platforms
 
 Ver 1.4.3 
 __________________________
-Fix rare issue with first user message displaying twice over
+Fix for duplicate first message
 
 Ver 1.4.2 
 __________________________

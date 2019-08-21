@@ -73,6 +73,18 @@ enum TagFilterType {
  * Show/Hide Channel response time on the chat. Defaults to YES
  */
 @property (nonatomic, assign) BOOL responseExpectationVisible;
+/*
+ * Set YES to use Web Widget in SDK. Defaults to NO
+ */
+@property (nonatomic, assign) BOOL useWebWidget;
+/*
+ * Host to be load Web Widget.
+ */
+@property (strong, nonatomic) NSString *webWidgetHost;
+/*
+ * Token to be used in Web Widget.
+ */
+@property (strong, nonatomic) NSString *webWidgetToken;
 
 /**
  *  Initialize Freshchat.
@@ -117,7 +129,6 @@ enum TagFilterType {
  *
  */
 -(void)showConversations:(UIViewController *)controller;
-
 /**
  *  Show the Conversations / Chat to the user.
  *
