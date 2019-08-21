@@ -9,16 +9,65 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+/*
+ * Enum for FAQ filter type
+ */
 enum TagFilterType {
     ARTICLE  = 1,
     CATEGORY = 2
 };
+
+/*
+ * Events Enum for freshchat screen
+ */
+typedef enum {
+    FCEventFAQCategoryListOpen,
+    FCEventFAQListOpen,
+    FCEventFAQOpen,
+    FCEventFAQSearch,
+    FCEventFAQVote,
+    FCEventChannelListOpen,
+    FCEventMessageSent,
+    FCEventConversationOpen,
+    FCEventCSatOpen,
+    FCEventCSatSubmit,
+    FCEventCSatExpiry,
+    FCEventLinkTap,
+    FCEventScreenView,
+    FCEventMessageReceive,
+    FCEventNotificationReceive,
+    FCEventIdTokenStatusChange
+} FCEvent;
+
+/*
+ * Parameter enums for events
+ */ 
+typedef enum {
+    FCPropertyFAQCategoryID,
+    FCPropertyFAQCategoryName,
+    FCPropertyFAQID,
+    FCPropertyFAQTitle,
+    FCPropertySearchKey,
+    FCPropertySearchFAQCount,
+    FCPropertyChannelID,
+    FCPropertyChannelName,
+    FCPropertyConversationID,
+    FCPropertyIsHelpful,
+    FCPropertyIsRelevant,
+    FCPropertyInputTags,
+    FCPropertyRating,
+    FCPropertyResolutionStatus,
+    FCPropertyComment,
+    FCPropertyURL
+} FCEventProperty;
+
 
 #define FRESHCHAT_DID_FINISH_PLAYING_AUDIO_MESSAGE @"com.freshworks.freshchat_play_inapp_audio"
 #define FRESHCHAT_WILL_PLAY_AUDIO_MESSAGE @"com.freshworks.freshchat_pause_inapp_audio"
 #define FRESHCHAT_USER_RESTORE_ID_GENERATED @"com.freshworks.freshchat_user_restore_id_generated"
 #define FRESHCHAT_USER_LOCALE_CHANGED @"com.freshworks.freshchat_user_locale_changed"
 #define FRESHCHAT_UNREAD_MESSAGE_COUNT_CHANGED @"com.freshworks.freshchat_unread_message_count_changed"
+#define FRESHCHAT_EVENTS @"com.freshworks.freshchat_events"
 
 @class FreshchatConfig, FreshchatUser, FAQOptions, ConversationOptions, FreshchatMessage;
 
@@ -68,6 +117,10 @@ enum TagFilterType {
  * Enable/Disable Notification banner when a support message is received. Defaults to YES
  */
 @property (nonatomic, assign) BOOL showNotificationBanner;
+/*
+ * Show/Hide Channel response time on the chat. Defaults to YES
+ */
+@property (nonatomic, assign) BOOL responseExpectationVisible;
 
 /**
  *  Initialize Freshchat.
@@ -144,6 +197,7 @@ enum TagFilterType {
  *
  */
 -(void)showFAQs:(UIViewController *)controller withOptions:(FAQOptions *)options;
+
 /**
  *  Set user Info
  *
@@ -153,6 +207,28 @@ enum TagFilterType {
  *
  */
 -(void)setUser:(FreshchatUser *) user;
+
+/**
+ *  Get user Alias
+ *
+ *  @discussion This method lets you to get user Id in Strict Mode for setting up JWT paload
+ *
+ */
+- (NSString *) getFreshchatUserId;
+
+/*
+ * Set user for JWT Auth strict mode
+ *
+ * Sync any change to user information, specified in JWT Token with Freshchat
+ *
+ */
+- (void)setUserWithIdToken :(NSString *) jwtIdToken;
+
+/*
+ * In Auth Strict Mode get status of User Auth Token
+ */
+- (NSString *)getUserIdTokenStatus;
+
 /**
 *  Restore User
 *
@@ -165,6 +241,15 @@ enum TagFilterType {
 *
 */
 -(void)identifyUserWithExternalID:(NSString *) externalID restoreID:(NSString *) restoreID;
+
+/**
+ * Identify and restore an user base on reference_id and can only be called in auth strict mode
+ *
+ * @param jwtIdToken Set a valid Id Token for the current user signed with your account key(s)
+ *
+ */
+-(void)restoreUserWithIdToken:(NSString *) jwtIdToken;
+
 /**
  *  Clear User Data
  *
@@ -205,6 +290,17 @@ enum TagFilterType {
  *
  */
 -(void)setPushRegistrationToken:(NSData *) deviceToken;
+/**
+ *  Open Freshchat Deeplink
+ *
+ *  @discussion Handle freshchat channels,faq deeplink and present in viewController
+ *
+ *  @param linkStr Freshchat Deeplink String
+ *
+ *  @param viewController present Freshchat Screen from above the view Controller
+ *
+ */
+-(void) openFreshchatDeeplink:(NSString *)linkStr viewController:(UIViewController *) viewController;
 /**
  *  Check if a push notification was from Freshchat
  *
@@ -295,6 +391,18 @@ enum TagFilterType {
  */
 -(void) dismissFreshchatViews;
 
+/**
+ *  Code block for handling links. Return 'YES' to override default link behaviour and 'NO' to handle it on the block itself.
+ */
+
+@property (nonatomic, copy) BOOL(^customLinkHandler)(NSURL*);
+
+/**
+ *  Code block for push notification tap events . Return 'YES' to not allow channel open and 'NO' to launch the coresponding channel.
+ */
+
+@property (nonatomic, copy) BOOL(^onNotificationClicked)(NSString*);
+
 @end
 
 
@@ -357,6 +465,11 @@ enum TagFilterType {
  * Default set to NO which hides "contact us" button on the navigation bar
  */
 @property (nonatomic) BOOL showContactUsOnAppBar;
+/*
+ * Option to show conversation link on article rating bar for Negative response,
+ * Default set to YES which shows conversation link there
+ */
+@property (nonatomic) BOOL showContactUsOnFaqNotHelpful;
 /**
  *  @discussion This method lets you to filter the list of Categories or Articles by tags
  *
@@ -430,6 +543,34 @@ enum TagFilterType {
  *  Tags used for filtering the channels list
  */
 -(NSArray *)tags;
+
+@end
+
+/**
+ * Events handling with Freshchat
+ */
+@interface FreshchatEvent: NSObject
+
+/**
+ * Event name for Freshchat screen
+ */
+@property (nonatomic, assign) FCEvent name;
+
+/*
+ * Parameter dictionary for a Freshchat screen's event
+ */
+@property (strong, nonatomic) NSDictionary *properties;
+
+/**
+ * Freshchat screens's event value
+ *
+ * @discussion this method lets you to get value for a Freshchat event property
+ *
+ * @param Enum parameter key for event
+ *
+ */
+- (id) valueForEventProperty : (FCEventProperty) property;
+
 
 @end
 

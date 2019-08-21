@@ -2,7 +2,118 @@ Freshchat iOS SDK - Powered by Freshdesk
 
 Documentation   : https://support.freshchat.com
 Support Email   : support@freshchat.com
-Version         : 1.5.3
+Version         : 2.7.0
+
+Ver 2.7.0 
+__________________________
+Enhancements :
+- Added new user events.
+- Events are richer with metdata.
+Breaking change :
+- Action name for user events change from `FRESHCHAT_ACTION_USER_ACTIONS` to `FRESHCHAT_EVENTS`.
+- Change in format of the event object (the key for the information is now  `event` instead of `action`).
+
+Ver 2.6.2 
+__________________________
+Bug fix :
+- Fix Away Messages not being displayed due to an incompatibility in version 2.6.0 and 2.6.1
+
+Ver 2.6.1 
+__________________________
+Enhancements :
+- Once the article is updated, users will again see the voting option.
+- Now users will be able to message you from the downvoted article screen, even if they leave and come back again.
+
+Ver 2.6.0 
+__________________________
+Feature :
+- Hide resolved messages for conversation with defined interval.
+Bug fixes :
+- Dismiss CSAT if expired.
+- Correct alignment of text bar for keyboard with text prediction.
+
+Ver 2.5.2 
+__________________________
+Fix file access permission for background access to database.
+
+Ver 2.5.1 
+__________________________
+Enhancement :
+- Improvements in keychain store.
+
+Ver 2.5.0 
+__________________________
+Enhancement :
+- Improvements in keychain store.
+
+Ver 2.4.4 
+__________________________
+Bug Fix :
+- Improved user experience during API failures.
+
+Ver 2.4.3 
+__________________________
+Enhancement :
+- Improvements in logic to load new messages for conversations
+
+Ver 2.4.2 
+__________________________
+Restore ID event triggered only when there is change in restore ID and external ID.
+
+Ver 2.4.1 
+__________________________
+Bug Fix:
+- Custom localised strings being cleared on resetUser
+
+Ver 2.4.0 
+__________________________
+Enhancement :
+- Add FAQ options flag showContactUsOnFaqNotHelpful for showing ContactUs in article detail view
+Changes: 
+- When `showContactUsOnAppBar` is true, contact us button will be shown in app bar only
+Fix :
+- Invalid image asset reference
+
+Ver 2.3.0 
+__________________________
+Enhancement
+- Graceful handling of unsupported messages
+
+Ver 2.2.0 
+__________________________
+Enhancements:
+- Ability to configure custom response expectations and away message for channels.
+- Config to hide response time.
+Fix:
+- Fix stale cache of response time.
+
+Ver 2.1.0 
+__________________________
+Enhancement
+- Ability to mask sensitive data present in user message
+
+Ver 2.0.0 
+__________________________
+Enhancements
+- Ability to intercept all external links
+- Securely identify and restore users using Id Tokens (JWT)
+- Ability to intercept Freshchat notification
+- Ability to listen to Freshchat events like message sent, message received, etc.
+
+Ver 1.5.6 
+__________________________
+Enhancement:
+- Ability to hide historical response time.
+Change:
+- Updated FAQ helpful prompt string to “Was this FAQ helpful?”.
+
+Ver 1.5.5 
+__________________________
+Fixes build issue with Xcode 10.
+
+Ver 1.5.4 
+__________________________
+Theme fixes and UI enhancements for chat resolution prompt
 
 Ver 1.5.3 
 __________________________

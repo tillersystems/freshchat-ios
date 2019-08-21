@@ -7,29 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA3B6BC62306A218006C6322 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = EA3B6BC22306A215006C6322 /* LICENSE */; };
+		EA3B6BC72306A218006C6322 /* ReleaseNotes.txt in Resources */ = {isa = PBXBuildFile; fileRef = EA3B6BC32306A215006C6322 /* ReleaseNotes.txt */; };
+		EA3B6BC82306A218006C6322 /* FreshchatSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = EA3B6BC42306A216006C6322 /* FreshchatSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA3B6BC92306A218006C6322 /* libFDFreshchatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3B6BC52306A218006C6322 /* libFDFreshchatSDK.a */; };
+		EA3B6BCD2306A22F006C6322 /* FreshchatModels.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EA3B6BCA2306A22F006C6322 /* FreshchatModels.bundle */; };
+		EA3B6BCE2306A22F006C6322 /* FCResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EA3B6BCB2306A22F006C6322 /* FCResources.bundle */; };
+		EA3B6BCF2306A22F006C6322 /* FCLocalization.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EA3B6BCC2306A22F006C6322 /* FCLocalization.bundle */; };
 		EA65F8252162EAE10052FC85 /* FreshchatCarthage.h in Headers */ = {isa = PBXBuildFile; fileRef = EA65F8232162EAE10052FC85 /* FreshchatCarthage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EA65F8322162EAF40052FC85 /* FreshchatSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = EA65F82B2162EAF30052FC85 /* FreshchatSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EA65F8332162EAF40052FC85 /* libFDFreshchatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA65F82C2162EAF30052FC85 /* libFDFreshchatSDK.a */; };
-		EA65F8342162EAF40052FC85 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = EA65F82D2162EAF40052FC85 /* LICENSE */; };
-		EA65F8352162EAF40052FC85 /* ReleaseNotes.txt in Resources */ = {isa = PBXBuildFile; fileRef = EA65F82E2162EAF40052FC85 /* ReleaseNotes.txt */; };
-		EA65F8362162EAF40052FC85 /* FCResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EA65F82F2162EAF40052FC85 /* FCResources.bundle */; };
-		EA65F8372162EAF40052FC85 /* FCLocalization.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EA65F8302162EAF40052FC85 /* FCLocalization.bundle */; };
-		EA65F8382162EAF40052FC85 /* FreshchatModels.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EA65F8312162EAF40052FC85 /* FreshchatModels.bundle */; };
 		EA65F83B2162EB610052FC85 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA65F83A2162EB610052FC85 /* UIKit.framework */; };
 		EA65F83D2162EB6A0052FC85 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA65F83C2162EB6A0052FC85 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA3B6BC22306A215006C6322 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		EA3B6BC32306A215006C6322 /* ReleaseNotes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReleaseNotes.txt; sourceTree = "<group>"; };
+		EA3B6BC42306A216006C6322 /* FreshchatSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreshchatSDK.h; sourceTree = "<group>"; };
+		EA3B6BC52306A218006C6322 /* libFDFreshchatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFDFreshchatSDK.a; sourceTree = "<group>"; };
+		EA3B6BCA2306A22F006C6322 /* FreshchatModels.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FreshchatModels.bundle; sourceTree = "<group>"; };
+		EA3B6BCB2306A22F006C6322 /* FCResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FCResources.bundle; sourceTree = "<group>"; };
+		EA3B6BCC2306A22F006C6322 /* FCLocalization.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FCLocalization.bundle; sourceTree = "<group>"; };
 		EA65F8202162EAE10052FC85 /* FreshchatCarthage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FreshchatCarthage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA65F8232162EAE10052FC85 /* FreshchatCarthage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreshchatCarthage.h; sourceTree = "<group>"; };
 		EA65F8242162EAE10052FC85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EA65F82B2162EAF30052FC85 /* FreshchatSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreshchatSDK.h; sourceTree = "<group>"; };
-		EA65F82C2162EAF30052FC85 /* libFDFreshchatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFDFreshchatSDK.a; sourceTree = "<group>"; };
-		EA65F82D2162EAF40052FC85 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		EA65F82E2162EAF40052FC85 /* ReleaseNotes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReleaseNotes.txt; sourceTree = "<group>"; };
-		EA65F82F2162EAF40052FC85 /* FCResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FCResources.bundle; sourceTree = "<group>"; };
-		EA65F8302162EAF40052FC85 /* FCLocalization.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FCLocalization.bundle; sourceTree = "<group>"; };
-		EA65F8312162EAF40052FC85 /* FreshchatModels.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FreshchatModels.bundle; sourceTree = "<group>"; };
 		EA65F83A2162EB610052FC85 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EA65F83C2162EB6A0052FC85 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -41,7 +41,7 @@
 			files = (
 				EA65F83D2162EB6A0052FC85 /* CoreGraphics.framework in Frameworks */,
 				EA65F83B2162EB610052FC85 /* UIKit.framework in Frameworks */,
-				EA65F8332162EAF40052FC85 /* libFDFreshchatSDK.a in Frameworks */,
+				EA3B6BC92306A218006C6322 /* libFDFreshchatSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,13 +68,13 @@
 		EA65F8222162EAE10052FC85 /* FreshchatCarthage */ = {
 			isa = PBXGroup;
 			children = (
-				EA65F8302162EAF40052FC85 /* FCLocalization.bundle */,
-				EA65F82F2162EAF40052FC85 /* FCResources.bundle */,
-				EA65F8312162EAF40052FC85 /* FreshchatModels.bundle */,
-				EA65F82B2162EAF30052FC85 /* FreshchatSDK.h */,
-				EA65F82C2162EAF30052FC85 /* libFDFreshchatSDK.a */,
-				EA65F82D2162EAF40052FC85 /* LICENSE */,
-				EA65F82E2162EAF40052FC85 /* ReleaseNotes.txt */,
+				EA3B6BCC2306A22F006C6322 /* FCLocalization.bundle */,
+				EA3B6BCB2306A22F006C6322 /* FCResources.bundle */,
+				EA3B6BCA2306A22F006C6322 /* FreshchatModels.bundle */,
+				EA3B6BC42306A216006C6322 /* FreshchatSDK.h */,
+				EA3B6BC52306A218006C6322 /* libFDFreshchatSDK.a */,
+				EA3B6BC22306A215006C6322 /* LICENSE */,
+				EA3B6BC32306A215006C6322 /* ReleaseNotes.txt */,
 				EA65F8232162EAE10052FC85 /* FreshchatCarthage.h */,
 				EA65F8242162EAE10052FC85 /* Info.plist */,
 			);
@@ -97,7 +97,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA65F8322162EAF40052FC85 /* FreshchatSDK.h in Headers */,
+				EA3B6BC82306A218006C6322 /* FreshchatSDK.h in Headers */,
 				EA65F8252162EAE10052FC85 /* FreshchatCarthage.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,11 +159,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA65F8352162EAF40052FC85 /* ReleaseNotes.txt in Resources */,
-				EA65F8362162EAF40052FC85 /* FCResources.bundle in Resources */,
-				EA65F8382162EAF40052FC85 /* FreshchatModels.bundle in Resources */,
-				EA65F8342162EAF40052FC85 /* LICENSE in Resources */,
-				EA65F8372162EAF40052FC85 /* FCLocalization.bundle in Resources */,
+				EA3B6BC72306A218006C6322 /* ReleaseNotes.txt in Resources */,
+				EA3B6BCD2306A22F006C6322 /* FreshchatModels.bundle in Resources */,
+				EA3B6BCE2306A22F006C6322 /* FCResources.bundle in Resources */,
+				EA3B6BC62306A218006C6322 /* LICENSE in Resources */,
+				EA3B6BCF2306A22F006C6322 /* FCLocalization.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

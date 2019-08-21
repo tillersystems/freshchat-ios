@@ -117,12 +117,25 @@
 			<key>dividerColor</key>
 			<string>#B3B3B3</string>
 		</dict>
+		<key>FallbackMessageStyle</key>
+		<dict>
+			<key>fontName</key>
+			<string>SYS_DEFAULT_FONT_NAME</string>
+			<key>textSize</key>
+			<string>15.0f</string>
+			<key>textColor</key>
+			<string></string>
+			<key>borderColor</key>
+			<string></string>
+			<key>background</key>
+			<string>#FFFFFF</string>
+		</dict>
 		<key>CustomerSurveyDialogStyle</key>
 		<dict>
 			<key>background</key>
-			<string>#DCDCDC</string>
+			<string>#F7F7F7</string>
 			<key>dividerColor</key>
-			<string>#E6E6E6</string>
+			<string>#B3B3B3</string>
 		</dict>
 		<key>CustomerSurveyRatingBarStyle</key>
 		<dict>
@@ -147,7 +160,7 @@
 			<key>textColor</key>
 			<string>#000000</string>
 			<key>borderColor</key>
-			<string>#B3B3B3</string>
+			<string>#808285</string>
 		</dict>
 		<key>CustomerSurveySubmitButtonTextStyle</key>
 		<dict>
@@ -156,9 +169,9 @@
 			<key>textSize</key>
 			<string>15.0f</string>
 			<key>textColor</key>
-			<string>#007AFF</string>
+			<string>#378CF8</string>
 			<key>background</key>
-			<string>#FFFFFF</string>
+			<string>#F7F7F7</string>
 		</dict>
 		<key>ChatResolutionPromptTextStyle</key>
 		<dict>
@@ -262,6 +275,21 @@
 			<string>10</string>
 			<key>UserBubbleRight</key>
 			<string>10</string>
+		</dict>
+		<key>UnsupportedContentTextStyle</key>
+		<dict>
+			<key>fontName</key>
+			<string>SYS_DEFAULT_FONT_NAME</string>
+			<key>textSize</key>
+			<string>10.0f</string>
+			<key>textColor</key>
+			<string>#8D96A5</string>
+			<key>background</key>
+			<string>#FFFFFF</string>
+			<key>borderColor</key>
+			<string>#F2F3F5</string>
+			<key>icon</key>
+			<string>FCResources.bundle/Images/freshchat_unsupported_content_icon</string>
 		</dict>
 	</dict>
 	<key>ChannelList</key>
