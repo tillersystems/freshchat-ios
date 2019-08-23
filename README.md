@@ -44,6 +44,7 @@ Swift : Add same ```#import "FreshchatCarthage/FreshchatSDK.h"``` into your Brid
 Documentation - https://support.freshchat.com/support/solutions/articles/232945-freshchat-ios-sdk-integration
 
 Theme Guide - https://support.freshchat.com/support/solutions/articles/229814-freshchat-ios-sdk-themes
+Note : For theme you need to open FCResources.bundle with show package content. Under Themes folder file called FCTheme.plist will help you in changing SDK theme. We are exploring more options to make the theme customization process more simpler.
 
 Thats all :)
 
