@@ -10,13 +10,13 @@
 		0219B85B239EEC370061B039 /* FCResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0219B858239EEC360061B039 /* FCResources.bundle */; platformFilter = ios; };
 		0219B85C239EEC370061B039 /* FreshchatModels.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0219B859239EEC360061B039 /* FreshchatModels.bundle */; platformFilter = ios; };
 		0219B85D239EEC370061B039 /* FCLocalization.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0219B85A239EEC370061B039 /* FCLocalization.bundle */; platformFilter = ios; };
-		0219B85F239EEC5D0061B039 /* FreshchatSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 0219B85E239EEC5C0061B039 /* FreshchatSDK.h */; };
+		0219B85F239EEC5D0061B039 /* FreshchatSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 0219B85E239EEC5C0061B039 /* FreshchatSDK.h */; platformFilter = ios; settings = {ATTRIBUTES = (Public, ); }; };
 		0219B861239EEC750061B039 /* libFDFreshchatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0219B860239EEC750061B039 /* libFDFreshchatSDK.a */; platformFilter = ios; };
 		0219B863239EEC8D0061B039 /* ReleaseNotes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0219B862239EEC8D0061B039 /* ReleaseNotes.txt */; platformFilter = ios; };
 		02F2B280239F891500023DCC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA65F83C2162EB6A0052FC85 /* CoreGraphics.framework */; platformFilter = ios; };
 		02F2B283239F891700023DCC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA65F83A2162EB610052FC85 /* UIKit.framework */; platformFilter = ios; };
 		EA3B6BC62306A218006C6322 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = EA3B6BC22306A215006C6322 /* LICENSE */; platformFilter = ios; };
-		EA65F8252162EAE10052FC85 /* FreshchatCarthage.h in Headers */ = {isa = PBXBuildFile; fileRef = EA65F8232162EAE10052FC85 /* FreshchatCarthage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA65F8252162EAE10052FC85 /* FreshchatCarthage.h in Headers */ = {isa = PBXBuildFile; fileRef = EA65F8232162EAE10052FC85 /* FreshchatCarthage.h */; platformFilter = ios; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
