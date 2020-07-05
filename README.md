@@ -31,7 +31,7 @@ Freshchat allows complete UI customization and localization of SDK screens. To a
 
 **FCResources.bundle** - Theme customization
 
-Under root folder https://github.com/freshdesk/freshchat-ios/tree/carthage/Resources download Resources.zip. Unzip it and add  ```FCLocalization.bundle``` and ```FCResources.bundle``` with Target Membership for project.
+Under root folder https://github.com/freshdesk/freshchat-ios/blob/carthage/Resources.zip download Resources.zip. Unzip it and add  ```FCLocalization.bundle``` and ```FCResources.bundle``` with Target Membership for project.
 
 
 ### Initilization
