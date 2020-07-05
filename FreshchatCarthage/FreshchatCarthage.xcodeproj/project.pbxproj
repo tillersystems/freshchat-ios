@@ -343,6 +343,10 @@
 					"\"SystemConfiguration\"",
 					"-framework",
 					"\"WebKit\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.freshdesk.hotline.FreshchatCarthage;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -397,6 +401,10 @@
 					"\"SystemConfiguration\"",
 					"-framework",
 					"\"WebKit\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.freshdesk.hotline.FreshchatCarthage;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
