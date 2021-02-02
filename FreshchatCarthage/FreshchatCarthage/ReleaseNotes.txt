@@ -2,14 +2,98 @@ Freshchat iOS SDK - Powered by Freshdesk
 
 Documentation   : https://support.freshchat.com
 Support Email   : support@freshchat.com
-Version         : DEV
+Version         : 4.1.5
 
-Ver DEV 
+Ver 4.1.5 
 __________________________
 Freshchat iOS SDK - Powered by Freshdesk
 Documentation   : https://support.freshchat.com
 Support Email   : support@freshchat.com
-Version         : 3.7.2
+Version         : 4.1.5
+
+Ver 4.1.5 
+__________________________
+Bug Fix:
+- UI bug fix in JWT accounts.
+
+Ver 4.1.4 
+__________________________
+Bug fix :
+- CSAT UI Bug fix.
+
+Ver 4.1.3 
+__________________________
+Enhancement :
+- Performance improvements.
+
+Ver 4.1.2 
+__________________________
+Bug Fix:
+- Fix for FAQs content visibility.
+
+Ver 4.1.1 
+__________________________
+Enhancement:
+- Improved polling mechanism.
+Bug Fix :
+- Bug fixes in JWT accounts.
+
+Ver 4.1.0 
+__________________________
+Feature :
+- Omni Kbase support for bundled accounts.
+
+Ver 4.0.1 
+__________________________
+Bug Fix:
+Minor Bug fixes.
+
+Ver 4.0.0 
+__________________________
+Enhancements :
+- Support for live translation of messages.
+- Pre-populate caption text while attaching images.
+
+Ver 3.7.8 
+__________________________
+Enhancements :
+- Added extra space around send button in chat.
+- Support sub locale of languages.
+Bug Fix:
+- Thread related crashes.
+
+Ver 3.7.7 
+__________________________
+Enhancement :
+- Proactive warning for incorrect app domain.
+Bug Fix :
+- Better handling of system font for HTML messages. 
+
+Ver 3.7.6 
+__________________________
+Enhancement :
+- Removed extra padding for images in message.
+
+Ver 3.7.5 
+__________________________
+Bug Fixes:
+- Better handling of "&" in messages.
+
+Ver 3.7.4 
+__________________________
+Enhancements :
+- Coredata improvements.
+- FAQ refresh optimisation.
+Bug Fixes :
+- Minor bug fixes.
+
+Ver 3.7.3 
+__________________________
+Enhancement:
+- Minor improvements on message loading.
+Bug Fixes:
+- Fixed FAQ not helpful bug.
+- Fixed attaching HEIC/TIFF images.
 
 Ver 3.7.2 
 __________________________
