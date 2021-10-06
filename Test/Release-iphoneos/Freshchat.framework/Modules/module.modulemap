@@ -1,6 +1,0 @@
-framework module Freshchat {
-  umbrella header "Freshchat.h"
-
-  export *
-  module * { export * }
-}
